@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage[12pt]{extsizes}
+\usepackage{fancyvrb}
+\usepackage{indentfirst}
+\usepackage[
+  left=2cm, right=2cm, top=2cm, bottom=2cm, headsep=0.2cm, footskip=0.6cm, bindingoffset=0cm
+]{geometry}
+\usepackage[english,russian]{babel}
+
+
+\begin{document}
+\section*{Вариант 6}
+
+Общая оценка последовательности $S$ строится как сумма оценок каждого входящего в неё вектора $X_{i}$
+\begin{equation}
+\begin{aligned}
+O(A_{0},F_{j},S) &= \sum_{i=1}^{\text{длина}(S)}O(A_{0},F_{j},X_{i}) = \\
+&= \sum_{i=1}^{\text{длина}(S)}\left(c_{1}\cdot N_{1}(X_{i},A_{0},F_{j})+c_{2}\cdot N_{2}(X_{i},A_{0},F_{j})+c_{3}\cdot N_{3}(X_{i},A_{0},F_{j})\right)
+\end{aligned}
+\end{equation}
+где: $X_{i}$ --- $i$-й набор последовательности $S$; $c_{1}-c_{3}$ --- нормализующие константы; $N_{1}-N_{3}$ --- параметры различающей активности.
+
+Функция различия для (1) переопределяется следующим образом:
+\begin{equation}
+R(g, X_{i}, A_{0}, F_{j}) =
+\begin{cases}
+0, & \text{если выходы элементов } g \text{ множества ЦУ,} \\
+   & \text{которые принадлежат классу } F_{j}, \\
+   & \text{одинаковы после подачи набора } X_{i}; \\
+1, & \text{иначе.}
+\end{cases}
+\end{equation}
+
+\end{document}
+
