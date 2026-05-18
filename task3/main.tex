@@ -1,0 +1,57 @@
+\documentclass[14pt, a4paper]{SCWorks}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+
+\usepackage{amsmath, amsfonts, amssymb}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{minted}
+
+\setminted[python]{
+    fontsize=\small,
+    breaklines=true,
+    style=bw,
+    linenos,
+    frame=lines,
+    framesep=2mm,
+    baselinestretch=1.2
+}
+
+\renewcommand\theFancyVerbLine{\small\arabic{FancyVerbLine}}
+
+\title{Алгоритм шифрования RSA: математические основы и программная реализация}
+\author{Миронов Г. О.}
+\date{\today}
+
+\course{1} 
+\group{151} 
+\napravlenie{09.03.01 Программная Инженерия} 
+\department{факультета КНиИТ} 
+
+\chair{Математической кибернетики и компьютерных наук} 
+\chtitle{доцент, к.ф.-м.н.} 
+\chname{Иванов И. И.} 
+\satitle{доцент, к.ф.-м.н.} 
+\saname{Петров П. П.} 
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\input{sections/01_intro}
+\input{sections/02_theory}
+\input{sections/03_implementation}
+\input{sections/04_conclusion}
+
+\newpage
+\bibliographystyle{gost780uv}
+\bibliography{thesis}
+
+\end{document}
