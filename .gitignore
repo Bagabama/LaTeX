@@ -2,3 +2,5 @@
 *.log
 *.pdf
 .DS_Store
+_minted-*/
+*.toc
